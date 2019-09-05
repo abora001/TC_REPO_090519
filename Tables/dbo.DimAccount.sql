@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[DimAccount]
+(
+[AccountKey] [int] NOT NULL,
+[ParentAccountKey] [int] NULL,
+[AccountCodeAlternateKey] [int] NULL,
+[ParentAccountCodeAlternateKey] [int] NULL,
+[AccountDescription] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AccountType] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Operator] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomMembers] [nvarchar] (300) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ValueType] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomMemberOptions] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO
